@@ -75,3 +75,38 @@
     border: 2px solid #ff1493;
   }
   
+  @media (max-width: 880px) {
+  .trending {
+    padding: 20px 80px;
+    width: 100%;
+    /* background-color: #f9f9f9; */
+    /* text-align: center; */
+    overflow: hidden; /* Prevent vertical overflow */
+    display: flex;
+        flex-direction: column;
+    
+  }
+}
+@media (max-width: 1200px) {
+  .trending {
+    padding: 20px 180px; /* Adjust padding for medium screens */
+  }
+}
+
+@media (max-width: 880px) {
+  .trending {
+    padding: 20px 0px; /* Adjust padding for smaller screens */
+  }
+}
+
+@media (max-width: 600px) {
+  .trending {
+    padding: 20px 0px; /* Further reduce padding for very small screens */
+  }
+}
+
+@media (max-width: 400px) {
+  .trending {
+    padding: 20px 0px; /* Minimum padding for the smallest screens */
+  }
+}

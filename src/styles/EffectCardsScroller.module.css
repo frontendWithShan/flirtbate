@@ -1,0 +1,56 @@
+/* EffectCardsScroller.module.css */
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 90vh;
+  }
+  
+  .swiperContainer {
+    width: 70%;
+    height: 90%;
+    position: relative;
+  }
+  
+  .swiperSlide {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Soft shadow for effect */
+  }
+  
+  .slideImage {
+    border-radius: 16px;
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .slideImage:hover {
+    transform: scale(1.05); /* Subtle zoom on hover */
+  }
+
+  @media (max-width: 800px) {
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 60vh;
+  }
+}
+@media (max-width: 600px) {
+    .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        height: 40vh;
+      }
+}
