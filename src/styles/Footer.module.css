@@ -1,0 +1,61 @@
+/* Footer Styles */
+.footer {
+    background-color: #000;
+    color: #fff;
+    padding: 1rem 0;
+  }
+  
+  .footerHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 80%;
+    margin: 0 auto;
+  }
+  
+  .footerTitle {
+    color: #ff0080;
+    font-size: 2rem;
+    font-family: cursive;
+  }
+  
+  .footerButton {
+    color: #ff0080;
+    border: none;
+    background: transparent;
+    font-size: 1rem;
+    text-decoration: underline;
+    cursor: pointer;
+  }
+  
+  .footerListContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 80%;
+    margin: 1rem auto;
+    gap: 1rem;
+  }
+  
+  .footerList {
+    list-style: none;
+    padding: 0;
+    flex: 1 1 calc(50% - 1rem); /* Each list takes half width on smaller screens */
+  }
+  
+  .footerList li {
+    margin-bottom: 0.5rem;
+  }
+  
+  .footerBottom {
+    text-align: center;
+    margin-top: 1rem;
+  }
+  
+  /* Responsive Design */
+  @media (min-width: 768px) {
+    .footerList {
+      flex: 1 1 calc(25% - 1rem); /* Each list takes a quarter width on larger screens */
+    }
+  }
+  

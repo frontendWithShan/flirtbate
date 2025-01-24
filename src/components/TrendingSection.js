@@ -1,5 +1,5 @@
 import React, { useEffect, useRef } from 'react';
-import { FaUserCircle } from 'react-icons/fa'; // Import an icon
+import { FaUserCircle } from 'react-icons/fa';
 import styles from '../styles/TrendingSection.module.css';
 
 const TrendingSection = () => {
@@ -12,15 +12,15 @@ const TrendingSection = () => {
       let scrollAmount = 0;
 
       const scrollInterval = setInterval(() => {
-        scrollAmount += 1; // Increment scroll position
+        scrollAmount += 1;
         if (scroll.scrollLeft >= scroll.scrollWidth / 2) {
-          scroll.scrollLeft = 0; // Reset to the start when halfway
+          scroll.scrollLeft = 0;
         } else {
           scroll.scrollLeft = scrollAmount;
         }
       }, 20);
 
-      return () => clearInterval(scrollInterval); // Cleanup on component unmount
+      return () => clearInterval(scrollInterval);
     };
 
     startScrolling();
@@ -36,7 +36,6 @@ const TrendingSection = () => {
     { name: 'Titi', country: 'Albania' },
   ];
 
-  // Duplicate the list to enable seamless scrolling
   const usersToRender = [...trendingUsers, ...trendingUsers];
 
   return (
