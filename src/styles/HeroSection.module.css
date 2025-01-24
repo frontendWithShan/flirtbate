@@ -1,0 +1,45 @@
+.hero {
+    text-align: center;
+    padding: 4rem 2rem;
+  }
+  
+  .highlight {
+    color: #32cd32;
+  }
+  .head{
+    font-size: 55px;
+    font-weight: 700;
+        line-height: 62px
+  }
+  
+  .button {
+    background-color: #ff1493;
+    border: none;
+    color: #fff;
+    padding: 1rem 2rem;
+    border-radius: 30px;
+    cursor: pointer;
+    margin-top: 1rem;
+    font-weight: 700;
+    line-height: 24px;
+    font-size: 22px !important;
+  }
+  
+  .button:hover {
+    background-color: #e01284;
+  }
+  
+  .imageWrapper {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 2rem;
+  }
+  
+  .imageWrapper img {
+    width: 150px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 15px;
+  }
+  

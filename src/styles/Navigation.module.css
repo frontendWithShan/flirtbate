@@ -1,0 +1,155 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #07030e;
+  padding: 10px 40px;
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+}
+
+.navContent {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  color: #ff0080;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.searchBar {
+  display: flex;
+  align-items: center;
+  background-color: #07030e;
+  border: 1px  solid #ff0080;
+  border-radius: 20px;
+  padding: 5px 15px;
+  width: 350px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.searchBar input {
+  border: none;
+  background: none;
+  outline: none;
+  color: white;
+  font-size: 1rem;
+  width: 100%;
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.language {
+  background: #ff0080;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+
+.language:hover {
+  background: #ff0080;
+  color: white;
+}
+
+.loginButton {
+  background: none;
+  color: white;
+  border: 1px solid #ff0080;
+  border-radius: 5px;
+  padding: 5px 15px;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+
+.loginButton:hover {
+  background: #ff69b4;
+  color: white;
+}
+
+.freeCallButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(90deg, #ffec61, #ff69b4);
+  color: black;
+  border: none;
+  border-radius: 20px;
+  padding: 5px 20px;
+  font-size: 0.9rem;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  gap: 3px;
+}
+
+.hamburger div {
+  width: 25px;
+  height: 3px;
+  background: white;
+  border-radius: 2px;
+  transition: all 0.3s ease;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #2e0a1e;
+    padding: 10px 0px;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+  }
+  .navContent {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .searchBar {
+    width: 70%;
+  }
+
+  .actions {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    gap: 10px;
+    background-color: #2e0a1e;
+    padding: 10px;
+    border-radius: 10px;
+  }
+
+  .actions.show {
+    display: flex;
+  }
+
+  .hamburger {
+    display: flex;
+    position: fixed;
+    right: 20px;
+    top: 15px;
+  }
+}
