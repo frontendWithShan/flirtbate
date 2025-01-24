@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import styles from '../styles/Footer.module.css'; // Import CSS Module
+import styles from '../styles/Footer.module.css';
 
 const Footer = () => {
   const [showList, setShowList] = useState(false);

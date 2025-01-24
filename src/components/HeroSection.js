@@ -10,11 +10,6 @@ const HeroSection = () => {
       <button className={styles.button}>
         <span className={styles.buttonHead} role="img" aria-label="video">🎥</span> Start Free Video Chat
       </button>
-      <div className={styles.imageWrapper}>
-        {/* <img src="/images/model-1.jpg" alt="Model 1" />
-        <img src="/images/model-2.jpg" alt="Model 2" />
-        <img src="/images/model-3.jpg" alt="Model 3" /> */}
-      </div>
     </section>
   );
 };

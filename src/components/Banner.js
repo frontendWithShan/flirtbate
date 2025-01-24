@@ -1,4 +1,4 @@
-// src/components/Banner.js
+
 export default function Banner() {
     return (
       <div className="banner">

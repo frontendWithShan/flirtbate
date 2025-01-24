@@ -1,4 +1,4 @@
-/* Footer Styles */
+
 .footer {
     background-color: #000;
     color: #fff;
@@ -40,7 +40,7 @@
   .footerList {
     list-style: none;
     padding: 0;
-    flex: 1 1 calc(50% - 1rem); /* Each list takes half width on smaller screens */
+    flex: 1 1 calc(50% - 1rem); 
   }
   
   .footerList li {
@@ -52,10 +52,9 @@
     margin-top: 1rem;
   }
   
-  /* Responsive Design */
   @media (min-width: 768px) {
     .footerList {
-      flex: 1 1 calc(25% - 1rem); /* Each list takes a quarter width on larger screens */
+      flex: 1 1 calc(25% - 1rem); 
     }
   }
   
